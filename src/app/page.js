@@ -29,7 +29,7 @@ export default function Home() {
       </div>
 
       <div className={styles.center}>
-       <h1>Hola</h1>
+       <h1>Hola como estas</h1>
       </div>
 
       <div className={styles.grid}>
