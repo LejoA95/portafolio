@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { useRef } from 'react';
 import { useGLTF, useAnimations } from '@react-three/drei';
-import FormationText from '../../app/formation/page';
+import FormationText from '../formation/page';
 
 export function Formation(props) {
     const { section } = props;

@@ -6,7 +6,6 @@ import Image from 'next/image'
 import SystemUpdateAltIcon from '@mui/icons-material/SystemUpdateAlt';
 import hojaVida from '../../assets/curriculum/hoja de vida.png'
 import Link from 'next/link';
-import zIndex from '@mui/material/styles/zIndex';
 
 export default function RedScocialText() {
 

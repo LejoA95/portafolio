@@ -7,11 +7,11 @@ import { MotionConfig } from 'framer-motion';
 import { World } from '@/components/objects3d/world';
 import { Box, Typography, Grow } from '@mui/material';
 // import About from '@/components/about/page';
-import About from './about/page'
+import About from '../components/about/page'
 import Presentation from '@/components/presentation/page';
 import ModalWelcome from '@/components/modalWelcome/page';
 import Navbar from '@/components/navbar/page';
-import Contact from './Contacto/page';
+import Contact from '../components/Contacto/page';
 
 export default function Home() {
     const [section, setSection] = useState(1);

@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { useGLTF, useAnimations, Float } from '@react-three/drei';
-import SkillsText from '../../app/skills/page';
+import SkillsText from '../skills/page';
 
 export function Skills({ section }) {
     const group = useRef();

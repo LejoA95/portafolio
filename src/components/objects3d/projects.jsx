@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
 import { useGLTF, useAnimations } from '@react-three/drei'
-import ProjectsText from '../../app/projects/page';
+import ProjectsText from '../projects/page';
 import { Float } from '@react-three/drei';
 
 export function Projects(props) {

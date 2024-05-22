@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { useGLTF, useAnimations } from '@react-three/drei';
-import RedSocialText from '../../app/redSocial/page';
+import RedSocialText from '../redSocial/page';
 
 export function Redes({ section }) {
     const group = useRef();

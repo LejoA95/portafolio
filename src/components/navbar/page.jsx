@@ -9,7 +9,8 @@ import MenuIcon from '@mui/icons-material/Menu';
 function MobileMenuButton({ onClick, navActive }) {
     return (
         <Grow in={true} {...(true ? { timeout: 2000 } : {})}>
-            <Box className='content_button-menu' sx={{ position: 'absolute', top: '1em', right: '1em', border: '1px solid #70707079', background: '#ffffff17', borderRadius: '.5em', WebkitBackdropFilter: 'blur(20px)', backdropFilter: 'blur(50px)', overflow: 'hidden', display: { xs: 'flex', sm: 'none' } }} zIndex='90000000'>
+            <Box className='content_button-menu' sx={{ position: 'absolute', top: '1em', right: '1em', border: '1px solid #70707079',
+                        background: '#01203060', borderRadius: '.5em', WebkitBackdropFilter: 'blur(20px)', backdropFilter: 'blur(50px)', overflow: 'hidden', display: { xs: 'flex', sm: 'none' } }} zIndex='90000000'>
                 <IconButton onClick={onClick}>
                     {navActive ? <Close color='blanco' /> : <MenuIcon color='blanco' />}
                 </IconButton>
@@ -47,7 +48,8 @@ export default function Navbar({ handleListItemClick, section, handleMenuMobile,
                         <div style={{ position: 'absolute', top: '0', left: '0', width: '100vw', height: '100vh', zIndex: '80000000', backgroundColor: '#01304754' }}></div>
                     </Grow>
                     <Grow in={navMobile} {...(navMobile ? { timeout: 1000 } : {})}>
-                        <Box sx={{ position: 'absolute', border: '1px solid #70707079', background: '#ffffff17', borderRadius: '.5em', WebkitBackdropFilter: 'blur(20px)', backdropFilter: 'blur(50px)', display: { xs: 'flex', sm: 'none' }, maxWidth: { xs: '300px', xm: ' 500px', sm: '800px' }, overflow: 'hidden' }} zIndex='80000000'>
+                        <Box sx={{ position: 'absolute', border: '1px solid #70707079',
+                        background: '#01203060', borderRadius: '.5em', WebkitBackdropFilter: 'blur(20px)', backdropFilter: 'blur(50px)', display: { xs: 'flex', sm: 'none' }, maxWidth: { xs: '300px', xm: ' 500px', sm: '800px' }, overflow: 'hidden' }} zIndex='80000000'>
                             <List>
                                 <NavListItem onClick={() => handleListItemClick(0, 'home')} text='Home' />
                                 <NavListItem onClick={() => handleListItemClick(0, 'about')} text='Sobre mí' />
@@ -63,7 +65,8 @@ export default function Navbar({ handleListItemClick, section, handleMenuMobile,
             }
             {/* menu escritorio */}
             <Grow in={true} {...(true ? { timeout: 2000 } : {})}>
-                <Box sx={{ position: 'absolute', bottom: { xs: '1.5em', sm: '3em' }, border: '1px solid #70707079', background: '#ffffff17', borderRadius: '.5em', WebkitBackdropFilter: 'blur(20px)', backdropFilter: 'blur(50px)', maxWidth: '800px', display: { xs: 'none', sm: 'flex' } }} zIndex='90000000'>
+                <Box sx={{ position: 'absolute', bottom: { xs: '1.5em', sm: '3em' }, border: '1px solid #70707079',
+                        background: '#01203060', borderRadius: '.5em', WebkitBackdropFilter: 'blur(20px)', backdropFilter: 'blur(50px)', maxWidth: '800px', display: { xs: 'none', sm: 'flex' } }} zIndex='90000000'>
                     <List sx={{ display: 'flex', p: '0', flexWrap: 'no-wrap' }}>
                         <NavListItem onClick={() => handleListItemClick(0, 'home')} selected={section === 3} text='Home' />
                         <NavListItem onClick={() => handleListItemClick(0, 'about')} selected={section === 3} text='Sobre mí' />

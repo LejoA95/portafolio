@@ -19,32 +19,33 @@ const ButtonPpal = ({ colorButton, textButton, typeButton, iconoFinal, onClickBu
 
     );
 }
-const InputLight = ({ name, nameguide, color, onChange, nameValue, multiline, maxRows, value, disabled, textHelp, maxLength, required }) => {
+const InputLight = ({ name, nameguide, color, error, helperText, onChange, nameValue, multiline, maxRows, value, disabled, textHelp, maxLength, required }) => {
     return (
         <>
             <TextField
                 label={name}
+                name={nameValue}
                 placeholder={nameguide}
                 variant="outlined"
                 size="small"
                 color={color}
                 disabled={disabled}
                 onChange={onChange}
-                name={nameValue}
                 defaultValue={value}
                 required={required}
-                error={false}
+                error={error}
+                helperText={helperText}
                 multiline={multiline}
                 rows={maxRows}
                 inputProps={{ maxLength: maxLength }}
-                // focused
+                focused
                 fullWidth
             />
-            <FormHelperText id={name} sx={{ fontSize: '15px', pl: .5, color:'#fff' }}>
+            <FormHelperText id={name} sx={{ fontSize: '15px', pl: .5, color: '#fff' }}>
                 {textHelp}
             </FormHelperText>
         </>
     )
 }
 
-export { ButtonPpal, InputLight  };
+export { ButtonPpal, InputLight };

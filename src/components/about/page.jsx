@@ -20,10 +20,10 @@ export default function About({ home }) {
                 <Box
                     sx={{
                         width: '100%',
-                        maxWidth: { xs: '100%', xm: '400px' },
+                        maxWidth: { xs: '100%', xm: '450px' },
                         p: '1em',
                         border: '1px solid #70707079',
-                        background: '#ffffff17',
+                        background: '#01203060',
                         borderRadius: '.5em',
                         WebkitBackdropFilter: 'blur(60px)',
                         backdropFilter: 'blur(60px)',
