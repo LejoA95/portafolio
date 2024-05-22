@@ -5,7 +5,7 @@ import { Float } from '@react-three/drei'
 
 export function Cabeza({ section }) {
     const group = React.useRef()
-    const { nodes, materials, animations } = useGLTF('/experience.glb')
+    const { nodes, materials, animations } = useGLTF('https://drive.google.com/file/d/1cUonEFmw_SQcVaQr-CfOm0zqfeL0L-G-/view?usp=sharing')
     const { actions } = useAnimations(animations, group)
 
     // Estado para manejar la posición del Float
@@ -72,4 +72,4 @@ export function Cabeza({ section }) {
 }
 
 
-useGLTF.preload('/experience.glb')
+useGLTF.preload('https://drive.google.com/file/d/1cUonEFmw_SQcVaQr-CfOm0zqfeL0L-G-/view?usp=sharing')
