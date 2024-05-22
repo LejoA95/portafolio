@@ -29,10 +29,10 @@ export default function Contact({ home }) {
     };
 
     const validateEmail = (email) => {
-        if (!email) {
-            setError("Campo e-mail no debe estar en blanco o vacío.");
-        } else if (!/\S+@\S+\.\S+/.test(email)) {
+        if (!/\S+@\S+\.\S+/.test(email)) {
             setError("Debe estar en formato e-mail conteniendo el caracter especial @ seguido de un dominio o proveedor seguido de un punto(.). Ejemplo: texto@texto.com");
+        } else if (!email) {
+            setError("debe ser un correo");
         } else {
             setError('');
         }
@@ -48,6 +48,8 @@ export default function Contact({ home }) {
             setSendForm(true);
         }
     };
+
+    console.log(formValues)
 
     return (
         <Box

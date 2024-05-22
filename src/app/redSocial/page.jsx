@@ -1,3 +1,4 @@
+"use client"
 import { Box, Button, Typography } from '@mui/material';
 import { Html } from '@react-three/drei';
 import { Bebas } from '@/app/themes/fonts';

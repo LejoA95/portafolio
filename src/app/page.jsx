@@ -79,7 +79,6 @@ export default function Home() {
                     <Canvas shadows camera={{ zoom: 2, position: [0, 0, 5] }}>
                         <World section={section} />
                         <ambientLight intensity={0.5} />
-                        <OrbitControls />
                         <Stars factor={1.5} />
                         <color attach='background' args={["#002"]} />
                     </Canvas>

@@ -7,6 +7,6 @@ export const openSans = Open_Sans({subsets: ['latin']})
 
 export const NotoSans = Noto_Sans({subsets: ['latin']})
 
-export const Pixelify = Pixelify_Sans({subsets: ['latin']})
+export const Pixelify = Pixelify_Sans({subsets: ['latin'], weight:['400']})
 
 export const Bebas = Bebas_Neue({subsets: ['latin'], weight:['400']})
